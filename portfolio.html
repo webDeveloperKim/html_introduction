@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <style>
+        .portfolio-container{
+            display:flex;
+            flex-direction:column; /* 세로 */
+            justify-content: center; /* direction 으로 가운데 정렬 */
+            align-items: center; /* direction 반대축으로 가운데 정렬 */
+            margin-top:40px;
+        }
+
+        /* 띄어쓰기는 밑에 있는 모든 태그 적용 */
+        /* >는 바로 밑에 있는 태그만 적용 */
+        .portfolio-container > h2{
+            font-size:1.75rem;
+            margin-bottom:20px;
+        }
+
+        .box-list{
+            display:flex;
+            justify-content: center; /* 가로 중앙 */
+            gap:40px;
+        }
+
+        .box{
+            width:min(350px, 100%);
+            min-width:350px;
+            min-height:350px;
+            text-align: center;
+            padding:30px;
+            border-radius:30px;
+            border:2px solid black;
+            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .box p{
+            margin-top:10px;
+        }
+
+        .box-list .box:nth-child(1){
+            background: rgb(247,247,247);
+        }
+
+        .box-list .box:nth-child(2){
+            background: blueviolet;
+            color:white;
+        }
+
+        .box-list .box:nth-child(3){
+            background: rgb(13,13,20);
+            color:white;
+        }
+
+        @media(max-width:1100px){
+            .box-list{
+                /* 크기가 넘치면 밑으로 떨어뜨리기 wrap */
+                flex-wrap:wrap;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- 네비게이션바 -->
+<nav>
+    <div class="inner-box">
+        <div class="logo">
+            <a href="index.html">My Home</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+</nav>    
+
+<!-- 페이지 -->
+ <div class="portfolio-container">
+    <h2>Portfolio</h2>
+    <div class="box-list">
+        <div class="box">
+            <h2>메밀꽃 필 무렵</h2>
+            <p>대한민국 사람이라면 누구나 읽었을 정도로 인지도 있는 작품이며, 배경인 강원도 평창군 봉평면은 이 작품 덕에 먹고 산다는 말이 있을 정도. 한국 문학사에 한 획을 그은 작품으로 이른바 소설에 주로 사용되는 서사 방식에서 상당량의 묘사를 사용하면서도 그 수준이 상당히 높아 한국 소설의 수준을 필력만으로 한 단계 끌어올렸다는 찬사를 받는다. 바로 위의 구절만 봐도 알 수 있듯이 아름답고 공감각적인 문체가 일품이다.
+            </p>
+        </div>
+        <div class="box">
+            <h2>메밀꽃 필 무렵</h2>
+            <p>장돌뱅이인 허 생원은 우연히 만난 젊은 장돌뱅이 동이와 대화 장터로 가는 길에 밤길을 동행하게 되고, 달빛 아래 메밀꽃 밭에서 자신이 젊었을 때 물레방앗간에서 있었던 성 서방네 처녀와의 이야기를 회상한다. 동이도 자신의 과거 이야기를 들려주며 생부가 누구인지 알고 싶다고 하는데, 이야기에 서로 비슷한 점이 많았던데다 결정적으로 동이가 왼손에 채찍을 들고 있는 것[2]을 보고 동이가 자신의 아들이라고 확신하면서 동이와 함께 동이의 어머니가 있다는 제천장으로 간다.</p>
+        </div>
+        <div class="box">
+            <h2>메밀꽃 필 무렵</h2>
+            <p>대한민국 사람이라면 누구나 읽었을 정도로 인지도 있는 작품이며, 배경인 강원도 평창군 봉평면은 이 작품 덕에 먹고 산다는 말이 있을 정도. 한국 문학사에 한 획을 그은 작품으로 이른바 소설에 주로 사용되는 서사 방식에서 상당량의 묘사를 사용하면서도 그 수준이 상당히 높아 한국 소설의 수준을 필력만으로 한 단계 끌어올렸다는 찬사를 받는다. 바로 위의 구절만 봐도 알 수 있듯이 아름답고 공감각적인 문체가 일품이다.</p>
+        </div>
+    </div>
+ </div>
+</body>
+</html>

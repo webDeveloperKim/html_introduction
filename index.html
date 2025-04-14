@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <style>
+        .home-content{
+            text-align:justify;
+            margin-top:40px;
+            display:flex;
+            flex-direction:column; /* 가로 정렬 무효화 */
+            justify-content: flex-start; /* direction 방향으로 정렬 */
+            align-items: center; /* direction과 반대축 정렬 */
+        }
+
+        .home-content h2{
+            max-width: min(1100px, 70%);
+            margin-bottom:10px;
+        }
+
+        .home-content p{
+            max-width: min(1100px, 70%);
+        }
+
+        a.btn-login{
+            display:inline-block; /* inline 속성에 상하여백을 적용하고 싶을때 */
+            background:linear-gradient(68deg, violet, 
+            blueviolet);
+            padding:12px 28px;
+            border-radius:1000px;
+            margin-top:20px;
+            color:white;
+        }
+
+        a.btn-login:hover{
+            background:linear-gradient(68deg,fuchsia,
+            blueviolet);
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션바 -->
+    <nav>
+        <div class="inner-box">
+            <div class="logo">
+                <a href="index.html">My Home</a>
+            </div>
+            <ul>
+                <li><a href="index.html"
+                class="selected">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <!-- 홈페이지 글이랑 버튼 -->
+     <div class="home-content">
+        <h2>메및꽃 필 무렵</h2>
+        <p>메밀꽃 필 무렵은 1936년 《조광》지에 발표된 이효석의 단편소설이다. 소설의 주 무대는 강원도 평창군 봉평면 일대이며, 마치 시처럼 서정적인 표현이 다수 사용되기도 했다. 원제는 《모밀꽃 필 무렵》이나, 현행 맞춤법 규정에 따라 표기한다.</p>
+        <a href="login.html" class="btn-login">로그인</a>
+    </div>
+
+</body>
+</html>
