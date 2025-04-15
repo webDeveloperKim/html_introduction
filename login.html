@@ -6,7 +6,47 @@
     <title>Login</title>
     <link rel="stylesheet" href="./css/style.css"/>
     <style>
-        
+        .login-container{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top:40px;
+        }
+
+        .login-container h2{
+            font-size:1.75rem;
+            margin-bottom: 10px;
+        }
+
+        input{
+            display:block;
+            margin:10px auto;
+            border:none;
+            font-size:1.25rem;
+            box-sizing:border-box;
+        }
+
+        input[type="text"], input[type="password"]{
+            background:lightcyan;
+            border-radius:1000px;
+            width:300px;
+            padding: 10px 20px;
+            box-shadow: 0 0 2px inset rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="submit"]{
+            width:200px;
+            border-radius:1000px;
+            padding:4px 12px;
+            color:white;
+            background:#0071FF;
+            cursor:pointer;
+        }
+        input[type="submit"]:hover{
+            background:#0071BB;
+        }
+
     </style>
 </head>
 <body>
@@ -25,7 +65,15 @@
     </div>
 </nav>
 
-<!-- 로그인 페이지 -->
- 
+<!-- 로그인 페이지 : 페이지제목, 아이디입력, 비밀번호입력, 로그인버튼 -->
+ <div class="login-container">
+    <h2>Login</h2>
+    <!-- 사용자 입력을 위해선 form + input 태그 -->
+     <form>
+        <input type="text" placeholder="아이디를 입력하세요">
+        <input type="password" placeholder="비밀번호를 입력하세요">
+        <input type="submit" value="로그인">
+     </form>
+ </div>
 </body>
 </html>
